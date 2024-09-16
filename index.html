@@ -44,19 +44,27 @@
     <!-- nav bar is here  -->
 
     <nav class="sticky top-0 bg- z-30 backdrop-blur-lg">
-        <div
-            class="h-[100px] flex flex-col sm:flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
-            <div class="pl-[10px]">
-                <img src="Assets/da-removebg-preview.png" alt="" class="sm:h-[100px] h-[80px] logo_dragon ">
+        <div class="h-[100px] flex flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
+
+
+            <div class="pl-[10px] flex justify-between items-center w-full overflow-y-hidden">
+                <div>
+                    <img src="Assets/da-removebg-preview.png" alt=""
+                        class="md:scale-110 sm:h-[100px] h-[82px] logo_dragon ">
+                </div>
+                <div class="sm:hidden flex ">
+                    <i class="fa-solid fa-bars text-4xl menu_btn" style="color:#fff2d0;"></i>
+                </div>
             </div>
-            <div class="hidden sm:flex sm:justify-center items-center">
+            <div class=" flex flex-col sm:justify-center  items-center relative overflow-y-visible md:z-0 z-30">
+
                 <ul
-                    class="flex flex-col gap-8 sm:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
-                    <li class="nav_links_1 "> <a href="#">Home </a> </li>
-                    <li class="nav_links_2"> <a href="about.html"> About </a> </li>
-                    <li class="nav_links_3"> <a href="Dragons.html">Dragons </a> </li>
-                    <li class="nav_links_4"> <a href="training.html">Training </a> </li>
-                    <li class="nav_links_5"> <a href="event.html">Events </a> </li>
+                    class="md:flex flex-col gap-8 hidden md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
+                    <li class=" nav_links_1 "> <a href="#">Home </a> </li>
+                    <li class=" nav_links_2"> <a href="about.html"> About </a> </li>
+                    <li class=" nav_links_3"> <a href="Dragons.html">Dragons </a> </li>
+                    <li class=" nav_links_4"> <a href="training.html">Training </a> </li>
+                    <li class=" nav_links_5"> <a href="event.html">Events </a> </li>
                 </ul>
             </div>
         </div>
@@ -78,6 +86,12 @@
                         class="hero_img_des invisible  relative top-[-15px] h-[40px] text-center w-[300px] content-center  bg-secondary font-primary font-bold text-[#fff2d0] rounded-2xl z-30 px-4  hover:text-black duration-300">
                         Dragons
                     </a>
+
+                    <button
+                        class="description_btn sm:h-[70px] sm:w-[185px] sm:mt-0 mt-4 h-[50px] bg-secondary text-[#fff2d0] rounded-2xl z-20 px-4  hover:text-black duration-300">
+                        Get in touch
+                        <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
+                    </button>
 
                 </div>
                 <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
@@ -132,7 +146,7 @@
 
         <div class="px-default z-20 relative">
             <div class="z-20 relative mt-32 sm:px-[40px]">
-                <div class="flex justify-center items-center flex-col overflow-x-hidden">
+                <div class="flex justify-center items-center flex-col overflow-x-hidden overflow-y-hidden">
                     <h2
                         class="ticket_title text-[40px] text-secondary nav_links_1 px-[60px] text-center sub_head font-bold">
                         join us
@@ -156,31 +170,66 @@
                                 class="event1_region h-[400px] w-[280px]  flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
                                 <img src="Assets/event_india.jpg" alt="" class="w-[230px] rounded-2xl event_img">
 
-                                <h1 class="text-[40px] font-bold">INdia</h1>
+                                <h1 class="text-[40px] fixed bottom-10 font-bold ">INdia</h1>
                             </div>
                             <div
                                 class="event2_region h-[400px] w-[280px] flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
                                 <img src="Assets/event_japan.jpg" alt="" class="w-[230px] rounded-2xl event_img">
 
-                                <h1 class="text-[40px] font-bold">japan</h1>
+                                <h1 class="text-[40px] fixed bottom-10 font-bold">japan</h1>
                             </div>
 
                             <div
                                 class="event3_region h-[400px] w-[280px]  flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
-                                <img src="Assets/event_india.jpg" alt="" class="w-[230px] rounded-2xl event_img">
+                                <img src="Assets/korea.jpg" alt="" class="w-[230px] rounded-2xl event_img">
 
-                                <h1 class="text-[40px] font-bold">INdia</h1>
+                                <h1 class="text-[40px] fixed bottom-10 font-bold"> korea</h1>
                             </div>
                             <div
                                 class="event4_region h-[400px] w-[280px] flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
-                                <img src="Assets/event_japan.jpg" alt="" class="w-[230px] rounded-2xl event_img">
+                                <img src="Assets/china.jpg" alt="" class="w-[230px] rounded-2xl event_img">
 
-                                <h1 class="text-[40px] font-bold">japan</h1>
+                                <h1 class="text-[40px] fixed bottom-10 font-bold">china</h1>
+                            </div>
+
+                            <div class="hidden md:flex-row flex-col  flex-wrap relative justify-evenly items-center gap-5 py-4 overflow-x-hidden"
+                                id="event_card_hide">
+
+
+
+                                <div
+                                    class="h-[400px] w-[280px]  flex-col justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex">
+                                    <img src="Assets/france.jpg" alt="" class="w-[230px] rounded-2xl event_img">
+
+                                    <h1 class="text-[40px] absolute bottom-10 font-bold"> france</h1>
+                                </div>
+                                <div
+                                    class="h-[400px] w-[280px] flex-col justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex ">
+                                    <img src="Assets/germany.jpg" alt="" class="w-[230px] rounded-2xl event_img">
+
+                                    <h1 class="text-[40px] absolute bottom-10 font-bold">germany</h1>
+                                </div>
+
+                                <div
+                                    class="h-[400px] w-[280px]  flex-col justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex ">
+                                    <img src="Assets/new york.jpg" alt="" class="w-[230px] rounded-2xl event_img">
+
+                                    <h1 class="text-[40px] absolute bottom-10 font-bold">New York</h1>
+                                </div>
+                                <div
+                                    class="h-[400px] w-[280px] flex-col justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex ">
+                                    <img src="Assets/nepal.jpg" alt="" class="w-[230px] rounded-2xl event_img">
+
+                                    <h1 class="text-[40px] absolute bottom-10 font-bold">nepal</h1>
+                                </div>
+
+
+
                             </div>
                         </div>
 
                         <button
-                            class="description_btn sm:h-[70px] sm:w-[185px] sm:mt-[20px] mt-[20px] h-[50px] bg-secondary text-[#fff2d0] font-primary font-medium  rounded-2xl z-20 px-4  hover:text-black duration-300">more
+                            class="location_btn sm:h-[70px] sm:w-[185px] sm:mt-[20px] mt-[20px] h-[50px] bg-secondary text-[#fff2d0] font-primary font-medium  rounded-2xl z-20 px-4  hover:text-black duration-300">more
                             Locations
                             <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
                         </button>
@@ -213,7 +262,7 @@
                     <div
                         class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4 testi_parent text-[16px]  overflow-x-hidden overflow-y-hidden">
 
-                        
+
 
 
                         <!-- here code comes from js  -->

@@ -27,15 +27,6 @@ sr.reveal('.event2_region', { origin: 'left', distance: '400px', delay: 100 })
 sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
 
 
-// our cusotmer reveal animation
-
-// sr.reveal('.user1', { origin: 'left', distance: '400px', delay: 400 })
-// sr.reveal('.user2', { origin: 'bottom', distance: '400px', delay: 400 })
-// sr.reveal('.user3', { origin: 'right', distance: '400px', delay: 400 })
-
-
-// ------------------------------------------------
-
 
 // on hover image description is here
 
@@ -210,3 +201,32 @@ function readmore() {
 // --------------------------------------------------------------------------------
 
 
+
+
+
+//  more location funcationality
+
+
+const location_btn = document.querySelector('.location_btn');
+location_btn.addEventListener('click', morelocation)
+
+function morelocation() {
+  const event_card_hide = document.querySelector('#event_card_hide')
+
+  if (event_card_hide.classList.contains('hidden')) {
+
+    location_btn.innerHTML = `show less <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>`;
+    event_card_hide.classList.remove('hidden');
+    event_card_hide.classList.add('flex')
+
+
+  } else {
+
+    location_btn.innerHTML = ` more locations <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>`;
+    event_card_hide.classList.remove('flex');
+    event_card_hide.classList.add('hidden');
+
+  }
+}
+
+// --------------------------------------------------------------------------------

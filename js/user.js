@@ -27,14 +27,13 @@ async function apicall() {
                 <a href="mailto: ${mail}"  class="text-center text-secondary testi_mail text-wrap"> ${mail} </a>
                 </div>`;
             parent.appendChild(div);
-            console.log(index);
-            
+
         });
 
 
-        sr.reveal('.user1', { origin:'bottom',distance:'400px', delay: 400 })
-        sr.reveal('.user2', { origin:'right', distance:'400px', delay: 400 })
-        sr.reveal('.user0', { origin:'left', distance:'400px', delay: 400 })
+        sr.reveal('.user1', { origin: 'bottom', distance: '400px', delay: 400 })
+        sr.reveal('.user2', { origin: 'right', distance: '400px', delay: 400 })
+        sr.reveal('.user0', { origin: 'left', distance: '400px', delay: 400 })
 
     }
     catch (error) {
