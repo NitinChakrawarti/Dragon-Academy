@@ -838,6 +838,10 @@ video {
   gap: 2rem;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1086,6 +1090,10 @@ video {
 
 .text-\[8px\] {
   font-size: 8px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-bold {
@@ -1350,6 +1358,10 @@ h6 {
 @media (min-width: 960px) {
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
   }
 }
   

@@ -27,6 +27,13 @@ sr.reveal('.event2_region', { origin: 'left', distance: '400px', delay: 100 })
 sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
 
 
+// our cusotmer reveal animation
+
+// sr.reveal('.user1', { origin: 'left', distance: '400px', delay: 400 })
+// sr.reveal('.user2', { origin: 'bottom', distance: '400px', delay: 400 })
+// sr.reveal('.user3', { origin: 'right', distance: '400px', delay: 400 })
+
+
 // ------------------------------------------------
 
 
