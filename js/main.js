@@ -203,20 +203,3 @@ function readmore() {
 // --------------------------------------------------------------------------------
 
 
-
-// random user api for testimonials 
-
-function getUsers() {
-  fetch("https://randomuser.me/api/?results=2")
-    .then((results) => {
-      return results.json();
-    })
-    .then((data) => {
-      var random_user = data.results
-      console.log(random_user);
-    });
-}
-
-getUsers();
-
-// ----------------------------------------------------------------------------------
