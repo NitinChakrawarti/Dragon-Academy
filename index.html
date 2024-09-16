@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Academy</title>
+
     <link rel="stylesheet" type="text/css" href="src/output.css">
 
-
-
     <!-- google fonts link / -->
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,21 +18,118 @@
 
     <!-- --------------------------- -->
 
+    <!-- ts particle cdn is here  -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <!-- --------------------------- -->
+
+
+    <!-- cdn font icons font awosome  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------------------- -->
 
 </head>
 
-<body class="bg-black p-default text-primary text-center">
+<body class="bg-black">
 
-    <a href="about.html" class="text-accent text-3xl"> about page </a>
+    <div id="particles-js " class="overflow-hidden"></div>
+
+    <!-- nav bar is here  -->
+
+    <nav class="sticky top-0 bg- z-30 backdrop-blur-sm">
+        <div
+            class="h-[100px] flex flex-col sm:flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
+            <div class="pl-[10px]">
+                <img src="Assets/da-removebg-preview.png " alt=""
+                    class="sm:h-[100px] h-[80px] logo_dragon ">
+            </div>
+            <div class="hidden sm:flex sm:justify-center items-center">
+                <ul
+                    class="flex flex-col gap-8 sm:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
+                    <li class="nav_links_1"> <a href="#">Home </a> </li>
+                    <li class="nav_links_2"> <a href="about.html"> About </a> </li>
+                    <li class="nav_links_3"> <a href="Dragons.html">Dragons </a> </li>
+                    <li class="nav_links_4"> <a href="training.html">Training </a> </li>
+                    <li class="nav_links_5"> <a href="event.html">Events </a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --------------------------- -->
+
+    <main class="w-full">
+        <!-- hero section is here  -->
+
+        <div class="hero w-full  bg-no-repeat bg-center bg-contain bg-transparent">
+            <div class=" w-full h-[700px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
+                <div id="left" class="sm:w-[28%] lg:flex justify-center items-center hidden">
+                    <img id="left_img" class="h-[150px] cursor-pointer" src="Assets/d07.png" alt="">
+                </div>
+                <div id="middle" class="sm:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
+                    <img id="main_img" class="h-[500px] z-10 sm:max-w-max" src="Assets/d06.png" class="" alt="">
+                    <a href="dragons.html"
+                        class="hero_img_des invisible  relative top-[-15px] h-[40px] text-center w-[300px] content-center  bg-secondary font-primary font-bold text-[#fff2d0] rounded-2xl z-30 px-4  hover:text-black duration-300">
+                        Dragons
+                    </a>
+
+                </div>
+                <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
+                    <img id="right_img" class="h-[200px] cursor-pointer " src="Assets/d09.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- --------------------------- -->
+
+        <!-- desciption of dragon Academy -->
+
+        <div class="desciption pt-0">
+            <div class="flex  flex-col w-full items-center p-default">
+                <div class="flex overflow-hidden">
+                    <img src="Assets/da-removebg-preview.png" alt="" class="h-[250px] w-[300px] z-20 description_logo">
+                </div>
+
+                <div class=" text-center text-tert leading tracking-wide flex sm:flex-col flex-row">
+                    <p class="text-center  font-secondary description_text z-20 px-[40px]"> It is a place dedicated for
+                        one who has
+                        enthusiasm to connect
+                        with dragons
+                        and be their daily mate.
+                        We provide many services such as tour to dragon museum, our online marketplaces has products
+                        related to dragon which attracts childrens and also we provide training to intrested individuals
+                        who want to spend their life with dragons.
+                    </p>
+                    <br>
+
+                </div>
+                <button
+                    class="description_btn h-[70px] w-[180px] bg-secondary text-[#fff2d0] rounded-2xl z-30 px-4  hover:text-black duration-300">know
+                    more
+                    <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- --------------------------- -->
 
 
-    <div class=" text-3xl bg-tert sm:bg-slate-500 text-secondary">
-        home page
-    </div>
 
+        <div id="particles-js"></div>
 
+    </main>
 
-
+    <!-- all script tags are here  -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
