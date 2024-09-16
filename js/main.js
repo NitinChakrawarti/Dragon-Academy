@@ -19,6 +19,13 @@ sr.reveal('#right', { origin: 'right', distance: '400px', delay: 1600 })
 sr.reveal('.description_logo', { origin: 'right', distance: '1000px' })
 sr.reveal('.description_text', { origin: 'bottom', delay: 100 })
 sr.reveal('.description_btn')
+sr.reveal('.ticket_title')
+
+sr.reveal('.event4_region', { origin: 'right', distance: '400px', delay: 400 })
+sr.reveal('.event3_region', { origin: 'right', distance: '400px', delay: 100 })
+sr.reveal('.event2_region', { origin: 'left', distance: '400px', delay: 100 })
+sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
+
 
 // ------------------------------------------------
 
