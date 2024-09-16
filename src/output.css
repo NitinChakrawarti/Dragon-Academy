@@ -802,8 +802,8 @@ video {
   color: rgb(243 253 232 / var(--tw-text-opacity));
 }
 
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
+.backdrop-blur-lg {
+  --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -881,6 +881,18 @@ h6 {
   background-position: 50% 50%;
 }
 
+/* nav links underline custom code  */
+
+.nav_links_1::after{
+  content: "";
+  width: 110%;
+  height: .06em;
+  background: #FA7070;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -903,8 +915,8 @@ h6 {
     height: 70px;
   }
 
-  .sm\:w-\[180px\] {
-    width: 180px;
+  .sm\:w-\[185px\] {
+    width: 185px;
   }
 
   .sm\:w-\[28\%\] {

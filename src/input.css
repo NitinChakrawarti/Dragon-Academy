@@ -49,4 +49,20 @@ h6 {
     background-position: 50% 50%;
   }
   
+
+
+  /* nav links underline custom code  */
+
+  .nav_links_1::after{
+    
+        content: "";
+        width: 110%;
+        height: .06em; 
+        background: #FA7070;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        
+      }
+  
   
