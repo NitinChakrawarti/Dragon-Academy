@@ -30,8 +30,9 @@ module.exports = {
       },
       fontFamily: {
         'primary': ['Cinzel'],
-        'secondary': ['Merriweather']
-
+        'secondary': ['Merriweather'],
+        'display':['cinzel','sans-serif'],
+        'body':['merriweather','sans-serif']
       },
 
     },

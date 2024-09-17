@@ -31,11 +31,6 @@ h6 {
 .h3 {
     @apply text-[25px] font-medium;
 }
-
-
-
-
-
   /* ---- particles.js container ---- */
   
   #particles-js {
@@ -48,8 +43,6 @@ h6 {
     background-size: cover;
     background-position: 50% 50%;
   }
-  
-
 
   /* nav links underline custom code  */
 
@@ -64,12 +57,8 @@ h6 {
         left: 0;
         
       }
-  
-
-
       /* custom scroll bar  */
 
-      
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -89,4 +78,7 @@ h6 {
   ::-webkit-scrollbar-thumb:hover {
     background: #FA7070; 
   }
+  
+
+
   
