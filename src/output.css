@@ -590,10 +590,6 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -606,6 +602,10 @@ video {
   bottom: 2.5rem;
 }
 
+.bottom-\[-20px\] {
+  bottom: -20px;
+}
+
 .left-2\/4 {
   left: 50%;
 }
@@ -616,18 +616,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.bottom-\[-20px\] {
-  bottom: -20px;
-}
-
-.top-2\/4 {
-  top: 50%;
-}
-
-.bottom-2\/4 {
-  bottom: 50%;
 }
 
 .z-10 {
@@ -683,6 +671,10 @@ video {
   margin-left: 4rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -727,20 +719,16 @@ video {
   margin-top: 20px;
 }
 
-.ml-4 {
-  margin-left: 1rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.mt-auto {
-  margin-top: auto;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -811,20 +799,24 @@ video {
   height: 82px;
 }
 
-.h-\[\] {
-  height: ;
+.h-\[3000px\] {
+  height: 3000px;
 }
 
-.h-\[380\] {
-  height: 380;
+.h-\[1000px\] {
+  height: 1000px;
 }
 
-.h-\[380px\] {
-  height: 380px;
+.h-\[0px\] {
+  height: 0px;
 }
 
-.h-\[30px\] {
-  height: 30px;
+.h-\[6000px\] {
+  height: 6000px;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .w-\[130px\] {
@@ -935,6 +927,10 @@ video {
   overflow-y: hidden;
 }
 
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
 .text-wrap {
   text-wrap: wrap;
 }
@@ -1019,10 +1015,6 @@ video {
   background-color: rgb(255 255 255 / 0.2);
 }
 
-.to-50\% {
-  --tw-gradient-to-position: 50%;
-}
-
 .bg-contain {
   background-size: contain;
 }
@@ -1039,11 +1031,6 @@ video {
   stroke: #000;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1055,6 +1042,18 @@ video {
 
 .p-default {
   padding: 20px;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-\[16px\] {
+  padding: 16px;
 }
 
 .px-4 {
@@ -1172,6 +1171,10 @@ video {
   padding-top: 3rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1180,8 +1183,8 @@ video {
   padding-top: 10px;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1319,6 +1322,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.no-underline {
+  text-decoration-line: none;
+}
+
 .backdrop-blur-lg {
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1440,13 +1447,22 @@ h6 {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:absolute {
-    position: absolute;
-  }
+.hover\:text-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(250 112 112 / var(--tw-text-opacity));
+}
 
+.hover\:no-underline:hover {
+  text-decoration-line: none;
+}
+
+@media (min-width: 640px) {
   .sm\:bottom-10 {
     bottom: 2.5rem;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
   }
 
   .sm\:mt-0 {
@@ -1457,6 +1473,10 @@ h6 {
     margin-top: 2.5rem;
   }
 
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .sm\:mt-6 {
     margin-top: 1.5rem;
   }
@@ -1465,16 +1485,16 @@ h6 {
     margin-top: 20px;
   }
 
-  .sm\:ml-0 {
-    margin-left: 0px;
+  .sm\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .sm\:mt-14 {
     margin-top: 3.5rem;
   }
 
-  .sm\:mt-16 {
-    margin-top: 4rem;
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-\[100px\] {
@@ -1493,6 +1513,10 @@ h6 {
     width: 185px;
   }
 
+  .sm\:w-\[230px\] {
+    width: 230px;
+  }
+
   .sm\:w-\[28\%\] {
     width: 28%;
   }
@@ -1503,22 +1527,6 @@ h6 {
 
   .sm\:w-\[70\%\] {
     width: 70%;
-  }
-
-  .sm\:w-\[\] {
-    width: ;
-  }
-
-  .sm\:w-\[23-\] {
-    width: 23-;
-  }
-
-  .sm\:w-\[230pc\] {
-    width: 230pc;
-  }
-
-  .sm\:w-\[230px\] {
-    width: 230px;
   }
 
   .sm\:max-w-max {
@@ -1562,6 +1570,22 @@ h6 {
 
   .sm\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .sm\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .sm\:text-3xl {

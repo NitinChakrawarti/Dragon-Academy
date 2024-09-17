@@ -7,6 +7,21 @@
     <title>Dragon Academy - About</title>
     <link rel="stylesheet" type="text/css" href="src/output.css">
 
+    <link rel="stylesheet" href="src/services.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <!-- google fonts link / -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +54,7 @@
 
     <div id="particles-js"></div>
 
-    <!-- nav bar is here  -->
-
+    <!-- nav bar is here -------------------------------------------------------------------- -->
     <nav class="sticky top-0 bg- z-30 backdrop-blur-lg">
         <div class="h-[100px] flex flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
 
@@ -57,9 +71,15 @@
             <div class=" md:flex flex-col  hidden sm:justify-center  items-center relative md:z-0 z-30">
                 <ul
                     class="flex font-primary flex-col gap-8 md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
-                    <li class=" nav_links_1  "> <a href="index.html">Home </a> </li>
-                    <li class=" nav_links_2 "> <a href="about.html"> About </a> </li>
-                    <li class=" nav_links_3  after_underline"> <a href="services.html"> services </a> </li>
+                    <li class=" nav_links_1  "> <a href="index.html"
+                            class="text-[20px] text-tert font-bold hover:text-secondary hover:no-underline">Home </a>
+                    </li>
+                    <li class=" nav_links_2 "> <a href="about.html"
+                            class="text-[20px] text-tert font-bold hover:text-secondary hover:no-underline"> About </a>
+                    </li>
+                    <li class=" nav_links_3  after_underline"> <a href="services.html"
+                            class="text-[20px] text-tert font-bold hover:text-secondary hover:no-underline"> services
+                        </a> </li>
 
                 </ul>
             </div>
@@ -71,13 +91,17 @@
 
             <ul
                 class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
-                <li class="  responsive_menu font-black  text-[20px] z-30"> <a href="index.html">Home </a> </li>
-                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="about.html"> About </a> </li>
-                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="services.html"> services </a> </li>
+                <li class="  responsive_menu font-black  text-[20px] z-30"> <a href="index.html"
+                        class="text-[20px] text-black font-bold hover:text-secondary hover:no-underline">Home </a> </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="about.html"
+                        class="text-[20px] text-black font-bold hover:text-secondary hover:no-underline"> About </a>
+                </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="services.html"
+                        class="text-[20px] text-black font-bold hover:text-secondary hover:no-underline"> services </a>
+                </li>
             </ul>
         </div>
     </div>
-
     <!-- --------------------------- -->
 
     <!-- main page of website-------------------------------------------------------------- -->
@@ -99,14 +123,122 @@
             </div>
         </div>
 
-
         <!-- services page code will be here            ---------------------------------------------------------------- -->
-        <div class="h-[500px] w-full bg-secondary z-20 relative">
+        <div class="h-[600px] w-full bg-secondary z-20 relative">
 
-            <!-- code here------------ -->
+            <section class="colored-section" id="testimonials">
+
+                <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active container-fluid">
+
+                            <h2 class="testimonial-text"> Services:</h2>
+
+                            <h2>The Dragon Academy is a prestigious institution dedicated to the study, training, and
+                                care of dragons. The academy offers a range of services to ensure the well-being and
+                                development of these majestic creatures.
+                            </h2>
+
+                            <img class="testimonial-image" src="Assets/1.jpeg" alt="dragon-profile">
+
+                            <em>
 
 
-            <h1>code here------------</h1>
+                                <p> 1. Dragon Training: Expert trainers teach dragons to obey commands, perform tasks,
+                                    and behave in various environments.</p>
+
+                                <p>2. Dragon Healthcare: Veterinary specialists provide medical care, vaccinations, and
+                                    nutritional guidance.</p>
+
+                                <p>3. Dragon Research: Scientists conduct studies on dragon behavior, physiology, and
+                                    habitats.</p>
+
+                                <p> 4. Dragon Communication: Specialists help humans understand and interpret dragon
+                                    language.</p>
+
+                            </em>
+                        </div>
+                        <div class="carousel-item container-fluid">
+                            <h2 class="testimonial-text">Training Objectives:</h2>
+                            <h3 class="testimonial-text">The Dragon Training program at the Dragon Academy focuses on
+                                developing a strong bond between dragons and their human handlers. Expert trainers use
+                                positive reinforcement techniques, emphasizing trust, respect, and clear communication.
+                            </h3>
+
+                            <img class="testimonial-image" src="Assets/1.1.jpeg" alt="lady-profile">
+
+                            <em>
+
+                                <p>1. Obedience: Teach dragons to respond to commands and instructions.</p>
+                                <p>2. Behavior Modification: Address undesirable behaviors, such as aggression or
+                                    fear-based reactions.</p>
+                                <p>3. Socialization: Acclimate dragons to various environments, people, and situations.
+                                </p>
+                                <p>4. Performance Enhancement: Improve dragon agility, speed, and endurance.</p>
+                            </em>
+                        </div>
+                        <div class="carousel-item container-fluid">
+                            <h2 class="testimonial-text">Healthcare:</h2>
+                            <h3 class="testimonial-text">The Dragon Academy's Healthcare program ensures the optimal
+                                health and well-being of dragons through comprehensive medical care, preventive
+                                measures, and cutting-edge research.
+                            </h3>
+                            <img class="testimonial-image" src="Assets/3.1.jpeg" alt="lady-profile">
+                            <em>
+
+                                <p>1. Routine Check-ups: Regular health examinations, vaccinations, and parasite
+                                    control.</p>
+                                <p>2. Nutrition Counseling: Personalized dietary plans.</p>
+                                <p>3. Mental Health Program: Supporting emotional well-being.</p>
+                                <p>4. Dental Health Program: Preventing oral diseases.</p>
+                                <p>5. Performance Enhancement: Improve dragon agility, speed, and endurance.</p>
+                            </em>
+                        </div>
+                        <div class="carousel-item container-fluid">
+                            <h2 class="testimonial-text">Moving Zoo:</h2>
+                            <h3 class="testimonial-text">The Dragon Academy partners with zoos worldwide to showcase
+                                dragons in a controlled, educational, and entertaining environment. These events promote
+                                dragon conservation, education, and community engagement.</h3>
+                            <img class="testimonial-image" src="Assets/3.jpeg" alt="lady-profile">
+                            <em>
+
+                                <p>1. Dragon Exhibitions: Showcase dragons in enclosures, highlighting their natural
+                                    behavior and unique characteristics.</p>
+                                <p>2. Dragon Demonstrations: Trained dragons perform tasks, demonstrating their
+                                    intelligence, agility, and trainability.</p>
+                                <p>3. Dragon Encounters: Visitors interact with dragons in a controlled environment,
+                                    fostering a deeper appreciation and understanding</p>
+
+                            </em>
+                        </div>
+
+                        <div class="carousel-item container-fluid">
+                            <h2 class="testimonial-text">Research:</h2>
+                            <h3 class="testimonial-text">Scientists conduct studies on dragon behavior, physiology, and
+                                habitats.</h3>
+                            <img class="testimonial-image" src="Assets/4.jpeg" alt="lady-profile">
+                            <em>
+
+                                <p>1. Studying dragon anatomy and physiology.</p>
+                                <p>2. Developing new treatments and medications.</p>
+                                <p>3. Investigating dragon diseases and prevention.</p>
+                                <p>4. The Role of Dragons in Human History and Culture.</p>
+                                <p>5. Conservation Efforts for Endangered Dragon Species.</p>
+                                <p>6. Dragon-Human Communication: A Study of Vocalizations and Body Language.</p>
+                            </em>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+            </section>
+
 
 
         </div>
@@ -118,8 +250,7 @@
         <div id="particles-js"></div>
     </main>
     <!-- footer tag is here all links are here  -->
-
-    <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
+    <footer class="p-[16px] z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
         <div class="md:h-[400px] w-full rounded-xl  ">
             <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
                 <div class="w-[300px] sm:h-[300px] mb-16 flex flex-col justify-start items-center">
@@ -130,54 +261,72 @@
                         oraganisation
                     </p>
                 </div>
-                <div class="w-[300px]  sm:h-[300px]  mb-16 justify-center sm:mt-10 mt-0">
-                    <h1 class="text-2xl sm:text-3xl text-white   font-medium text-center mb-8">LINKS </h1>
+                <div class="w-[300px]  sm:h-[300px]  justify-center sm:pt-10 mb-10 mt-0">
+                    <h1 class="text-2xl sm:text-3xl text-white   font-medium text-center mb-8 font-primary">LINKS </h1>
                     <div>
                         <ul class="text-tert  font-primary text-[1px] text-center">
-                            <li class="pb-2 text-lg"> <a class="text-ld" href="#">Home </a> </li>
-                            <li class="pb-2 text-lg"> <a class="text-ld" href="about.html"> About </a> </li>
-                            <li class="pb-2 text-lg"> <a class="text-ld" href="Dragons.html">services </a> </li>
+                            <li class="pb-2 text-lg"> <a
+                                    class="text-tert hover:text-secondary hover:no-underline" href="#">Home
+                                </a> </li>
+                            <li class="pb-2 text-lg"> <a
+                                    class="text-tert hover:text-secondary hover:no-underline"
+                                    href="about.html"> About </a> </li>
+                            <li class="pb-2 text-lg"> <a
+                                    class="text-tert hover:text-secondary hover:no-underline"
+                                    href="Dragons.html">services </a> </li>
                             <!-- <li> <a href="training.html">Training </a> </li>
                             <li> <a href="event.html">Events </a> </li> -->
                         </ul>
                     </div>
                 </div>
-                <div class="w-[300px]  h-[300px] justify-center sm:mt-10 mt-0">
-                    <h1 class="sm:text-3xl text-2xl font-medium text-white text-center mb-8">Social media </h1>
+                <div class="w-[300px]  h-[300px] justify-center sm:pt-10 mb-10 mt-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium text-white text-center mb-8 font-primary">Social media </h1>
                     <div>
                         <ul class="text-[1px] text-start ml-16 text-tert font-primary">
-                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
-                                        class="fa-brands fa-youtube text-lg sm:text-xl sm:ml-0 ml-6 mr-4"></i> youtube
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i class="fa-brands fa-youtube text-lg sm:text-xl sm:ml-0 ml-6 mr-4"></i> youtube
                                 </a>
                             </li>
-                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
-                                        class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-facebook"></i>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-facebook"></i>
                                     facebook </a> </li>
-                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
-                                        class="fa-solid   text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-x"></i> twitter</a>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] hover:text-secondary hover:no-underline text-lg pb-10 text-tert ">
+                                    <i class="fa-solid  text-tert text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-x"></i>
+                                    twitter</a>
                             </li>
-                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
-                                        class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-instagram"></i>
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-instagram"></i>
                                     instagram</a> </li>
-                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                            <li class="pb-4"> <a href=""
+                                    class=" text-[20px] text-tert hover:text-secondary hover:no-underline text-lg pb-10">
+                                    <i
                                         class="fa-solid   text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-phone"></i>9876543210</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
+
+
+
             <div class="text-center text-lg  pb-[30px] sm:pb-0">
-                <span class=" text-center text-lg font-primary text-tert"> <span class="text-sm pb-4">&#169; </span> all rights reserved</span>
+                <span class=" text-center text-lg font-primary text-tert"> <span class="text-sm pb-4">&#169; </span> all
+                    rights reserved</span>
 
             </div>
         </div>
     </footer>
+
     <!-- ------------------------------------------------------------------------------ -->
     <!-- all script tags are here  -->
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/menubtn.js"></script>
-    <script src="js/user.js"></script>
 </body>
 
 </html>
