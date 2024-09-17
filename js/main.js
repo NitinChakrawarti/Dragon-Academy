@@ -33,13 +33,15 @@ sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
 const hero_des = document.querySelector('#middle');
 
 hero_des.addEventListener('mouseenter', () => {
-
-  document.querySelector('.hero_img_des').classList.toggle('invisible')
+  document.querySelector('.drag_btn_hover').classList.toggle('invisible')
+  console.log('hddd');
+  
 });
 
 hero_des.addEventListener('mouseleave', () => {
-  document.querySelector('.hero_img_des').classList.toggle('invisible')
-
+  document.querySelector('.drag_btn_hover').classList.toggle('invisible')
+  console.log("hee");
+  
 });
 
 // ------------------------------------------------

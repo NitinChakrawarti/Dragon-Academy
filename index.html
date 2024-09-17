@@ -74,7 +74,6 @@
 
     <main class="w-full">
         <!-- hero section is here  -->
-
         <div class="hero w-full  bg-no-repeat bg-center bg-contain bg-transparent">
             <div class=" w-full h-[700px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
                 <div id="left" class="sm:w-[28%] lg:flex justify-center items-center hidden">
@@ -82,16 +81,11 @@
                 </div>
                 <div id="middle" class="sm:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
                     <img id="main_img" class="h-[500px] z-10 sm:max-w-max" src="Assets/d06.png" class="" alt="">
-                    <a href="dragons.html"
-                        class="hero_img_des invisible  relative top-[-15px] h-[40px] text-center w-[300px] content-center  bg-secondary font-primary font-bold text-[#fff2d0] rounded-2xl z-30 px-4  hover:text-black duration-300">
-                        Dragons
-                    </a>
-
-                    <button
-                        class="description_btn sm:h-[70px] sm:w-[185px] sm:mt-0 mt-4 h-[50px] bg-secondary text-[#fff2d0] rounded-2xl z-20 px-4  hover:text-black duration-300">
-                        Get in touch
+                    <!-- <button
+                        class="drag_btn_hover invisible sm:h-[70px] sm:w-[185px] sm:mt-0 mt-4 h-[50px] bg-secondary text-[#fff2d0] rounded-2xl z-20 px-4  hover:text-black duration-300">know
+                        more
                         <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
-                    </button>
+                    </button> -->
 
                 </div>
                 <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
@@ -249,10 +243,10 @@
         <!-- get testimonials  ----------  -->
 
 
-        <div class="testimonials px-default z-20 relative">
-            <div class="z-20 relative mt-32 sm:px-[40px]">
+        <div class="testimonials px-default z-20 relative pb-16  bg-secondary/15">
+            <div class="z-20 relative mt-32 pt-8 sm:px-[40px]">
                 <div class="flex justify-center items-center flex-col overflow-x-hidden">
-                    <h2 class="text-[28px] text-secondary nav_links_1 px-[60px] text-center sub_head font-bold">
+                    <h2 class="text-[28px] text-tert nav_links_1 px-[60px] text-center sub_head font-bold">
                         Our Customers
                     </h2>
 
@@ -263,8 +257,15 @@
                         class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4 testi_parent text-[16px]  overflow-x-hidden overflow-y-hidden">
 
 
+                        <!-- <div
+                            class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
+                            <img src=${img_url} alt="" m class="h-[130px] w-[130px] rounded-full testi_dp">
+                            <h1 class="text-[28px] testi_name"> ${name} </h1>
 
 
+                            <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap"> ${mail}
+                            </a>
+                        </div> -->
                         <!-- here code comes from js  -->
 
                     </div>
@@ -289,8 +290,8 @@
 
 
 
-    <footer class="p-4 z-20 relative w-full foot_line">
-        <div class="h-[400px] w-full rounded-xl  ">
+    <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
+        <div class="md:h-[400px] w-full rounded-xl  ">
 
             <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
 
