@@ -1488,6 +1488,22 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-\[4px\] {
+  font-size: 4px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1547,6 +1563,10 @@ video {
 
 .text-tert\/70 {
   color: rgb(255 242 208 / 0.7);
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .backdrop-blur-lg {
@@ -1719,6 +1739,18 @@ h6 {
     width: 30%;
   }
 
+  .sm\:w-\[\] {
+    width: ;
+  }
+
+  .sm\:w-\[70\] {
+    width: 70;
+  }
+
+  .sm\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .sm\:max-w-max {
     max-width: -moz-max-content;
     max-width: max-content;
@@ -1730,6 +1762,10 @@ h6 {
 
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
   }
 
   .sm\:px-\[150px\] {
@@ -1765,6 +1801,16 @@ h6 {
     line-height: 2.25rem;
   }
 
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:font-bold {
     font-weight: 700;
   }
@@ -1773,6 +1819,10 @@ h6 {
 @media (min-width: 768px) {
   .md\:z-0 {
     z-index: 0;
+  }
+
+  .md\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .md\:flex {
@@ -1825,6 +1875,24 @@ h6 {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[\] {
+    color: ;
   }
 }
 

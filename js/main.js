@@ -30,6 +30,11 @@ sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
 sr.reveal('.title_aboutsection', { origin: 'right', distance: '500px', delay:0 })
 
 
+sr.reveal('.aboutushead')
+sr.reveal('.about_img')
+sr.reveal('.abouttext')
+
+
 // on hover image description is here
 
 const hero_des = document.querySelector('#middle');
