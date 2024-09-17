@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Academy - About</title>
-
     <link rel="stylesheet" type="text/css" href="src/output.css">
 
     <!-- google fonts link / -->
@@ -36,7 +35,6 @@
 
 </head>
 
-
 <body class="bg-black">
 
     <div id="particles-js"></div>
@@ -53,7 +51,7 @@
                         class="md:scale-110 sm:h-[100px] h-[82px] logo_dragon ">
                 </div>
                 <div class="sm:hidden flex ">
-                    <i class="fa-solid fa-bars text-4xl menu_btn" style="color:#fff2d0;"></i>
+                    <i class="fa-solid fa-bars text-4xl menu_btn " style="color:#fff2d0;"></i>
                 </div>
             </div>
             <div class=" md:flex flex-col  hidden sm:justify-center  items-center relative md:z-0 z-30">
@@ -61,8 +59,7 @@
                     class="flex font-primary flex-col gap-8 md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
                     <li class=" nav_links_1  "> <a href="index.html">Home </a> </li>
                     <li class=" nav_links_2 after_underline"> <a href="about.html"> About </a> </li>
-                    <li class=" nav_links_2 "> <a href="services.html"> services </a> </li>
-
+                    <li class=" nav_links_3  "> <a href="services.html"> services </a> </li>
 
                 </ul>
             </div>
@@ -81,20 +78,9 @@
         </div>
     </div>
 
-    <div class=" menu_nav hidden  relative  bg-tert/20">
-        <div class="flex flex-row-reverse">
-
-            <ul
-                class="flex font-primary flex-col gap-8 md:flex-row text-secondary font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
-                <li class=" nav_links_ responsive_menu z-30"> <a href="index.html">Home </a> </li>
-                <li class=" responsive_menu z-30"> <a href="about.html"> About </a> </li>
-                <li class=" responsive_menu z-30"> <a href="services.html"> services </a> </li>
-            </ul>
-        </div>
-    </div>
-
     <!-- --------------------------- -->
 
+    <!-- main page of website-------------------------------------------------------------- -->
     <main class="w-full">
         <!-- hero section is here  -->
 
@@ -113,49 +99,123 @@
             </div>
         </div>
 
+        <div class="w-full z-20 relative">
 
+            <div class=" z-20 relative">
 
-
-
-        <!-- get testimonials  ----------  -->
-
-
-        <div class="testimonials px-default z-20 relative pb-16  bg-secondary/25">
-            <div class="z-20 relative  pt-8 sm:px-[40px]">
-                <div class="flex justify-center items-center flex-col overflow-x-hidden">
-                    <h2 class="text-[28px] text-white nav_links_1 px-[60px] text-center sub_head font-bold">
-                        Our Customers
-                    </h2>
-
-                </div>
-                <div class="testimonials_main mt-8 mb-8 ">
-                    <div
-                        class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4 testi_parent text-[16px]  overflow-x-hidden overflow-y-hidden">
-                        <!-- <div
-                            class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
-                            <img src=${img_url} alt="" m class="h-[130px] w-[130px] rounded-full testi_dp">
-                            <h1 class="text-[28px] testi_name"> ${name} </h1>
-                            <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap"> ${mail}
-                            </a>
-                        </div> -->
-
-                        <!-- here code comes from js  -->
+                <!-- Our Mission Section -->
+                <div id="steps"
+                    class="about-container z-20 relative about-content px-6 pt-12 max-w-7xl mt-16 mx-auto lg:px-8 lg-mt-32">
+                    <h1 class="text-3xl about-content font-bold font-display mb-14">Our Mission</h1>
+                    <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mb-28">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex justify-center items-center">
+                                <img class="object-cover rounded" src="Assets/d2486cd1-6f01-46a2-a444-e324a83f360b.png"
+                                    alt="">
+                            </div>
+                            <p
+                                class="text-xl text-center font-medium text-secondary rounded-lg bg-tert/20 stroke-black p-10 font-secondary">
+                                To inspire and cultivate excellence in every
+                                trainer,
+                                equipping
+                                them
+                                for success in an ever-changing world.</p>
+                        </div>
                     </div>
 
+
+                    <!-- our vision section here  -->
+
+
+
+                    <h1 class="text-3xl about-content font-bold font-display mb-14">Our Vission</h1>
+                    <div id="step1" class="rounded-xl border px-8 mb-28 py-12 flex flex-col lg:flex-row">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex justify-center items-center">
+                                <img class="object-cover rounded" src="assets/8ab7e9f0-45b6-46ce-863f-8cac7cee31a6.png"
+                                    alt="">
+                            </div>
+                            <p class=" text-xl text-center font-medium text-secondary rounded-lg bg-tert/20 stroke-black
+                                    p-10 font-secondary">To be a leading trainer, and critical thinking in
+                                every
+                                trainer
+                                like
+                                Dragan are real and also make a bond with human.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="steps"
+                    class="about-container z-20 relative about-content px-6  max-w-7xl mx-auto lg:px-8 lg-mt-32 mb-8">
+
+                    <!-- Why choose dragon academy -->
+
+                    <h1 class="text-3xl about-content font-bold font-display mb-14">Why Choose Dragon Academy</h1>
+                    <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                        <div class="flex flex-col md:flex-row gap-6 w-full">
+                            <div class="flex justify-center items-center">
+                                <img class="object-cover rounded" src="assets/e4bc1e1f-2d1a-4983-b606-015ca9f1051e.png"
+                                    alt="">
+                            </div>
+                            <div class="text-xl w-full font-medium text-secondary rounded-lg bg-tert/20 stroke-black
+                            py-10 px-[10px] font-secondary">
+                                <ul class="list-disc pl-5">
+                                    <li class="   
+                                        text-lg font-light font-body">Expert faculty for trainers</li>
+                                    <li class="text-lg font-light font-body">A diverse and inclusive community</li>
+                                    <li class="text-lg font-light font-body">Innovative teaching methods</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
-        </div>
+            <!-- get testimonials  ----------  -->
+
+            <div class="testimonials px-default z-20 relative pb-16  bg-secondary/15">
+                <div class="z-20 relative  pt-8 sm:px-[40px]">
+                    <div class="flex justify-center items-center flex-col overflow-x-hidden">
+                        <h2 class="text-[28px] text-white nav_links_1 px-[60px] text-center sub_head font-bold">
+                            Our Customers
+                        </h2>
+
+                    </div>
+                    <div class="testimonials_main mt-8 mb-8 ">
+
+                        <div
+                            class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4 testi_parent text-[16px]  overflow-x-hidden overflow-y-hidden">
 
 
-        <!-- --------------------------- -->
+                            <!-- <div
+                            class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
+                            <img src=${img_url} alt="" m class="h-[130px] w-[130px] rounded-full testi_dp">
+                            <h1 class="text-[28px] testi_name"> ${name} </h1>
 
 
+                            <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap"> ${mail}
+                            </a>
+                        </div> -->
+                            <!-- here code comes from js  -->
 
-        <div id="particles-js"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- --------------------------- -->
+
 
     </main>
+
+    <div id="particles-js"></div>
+
 
 
     <!-- footer tag is here all links are here  -->
@@ -164,9 +224,7 @@
 
     <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
         <div class="md:h-[400px] w-full rounded-xl  ">
-
             <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
-
                 <div class="w-[300px] h-[300px] flex flex-col justify-start items-center">
                     <img src="Assets/da-removebg-preview.png" alt="" class="h-[200px] relative z-20">
                     <p class="font-primary z-30 text-tert text-center font-semibold text-sm  mt-[-50px]">Training &
@@ -177,22 +235,20 @@
                 </div>
                 <div class="w-[300px]  h-[300px] justify-center mt-10">
                     <h1 class="text-4xl font-medium text-center mb-8">LINKS </h1>
-
                     <div>
-                        <ul class="text-tert  font-primary font-semibold text-[1px] text-center">
+                        <ul class="text-tert  font-primary text-[1px] text-center">
                             <li> <a href="#">Home </a> </li>
                             <li> <a href="about.html"> About </a> </li>
-                            <li> <a href="Dragons.html">Dragons </a> </li>
-                            <li> <a href="training.html">Training </a> </li>
-                            <li> <a href="event.html">Events </a> </li>
+                            <li> <a href="Dragons.html">services </a> </li>
+                            <!-- <li> <a href="training.html">Training </a> </li>
+                            <li> <a href="event.html">Events </a> </li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="w-[300px]  h-[300px] justify-center mt-10">
                     <h1 class="text-4xl font-medium text-center mb-8">Social media </h1>
-
                     <div>
-                        <ul class="text-[1px] text-start ml-16 text-tert font-semibold font-primary">
+                        <ul class="text-[1px] text-start ml-16 text-tert font-primary">
                             <li> <a href="" class=""> <i class="fa-brands fa-youtube text-2xl mr-4"></i> youtube </a>
                             </li>
                             <li> <a href=""> <i class="fa-brands  text-2xl mr-4  fa-facebook"></i> facebook </a> </li>
@@ -201,24 +257,19 @@
                             <li> <a href=""> <i class="fa-solid   text-2xl mr-4 fa-phone"></i>9876543210</a> </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
             <div class="text-center text-lg  pb-[30px] sm:pb-0">
                 <span class=" text-center text-lg font-primary text-tert"> &#169; all rights reserved</span>
 
             </div>
-
         </div>
     </footer>
-
     <!-- ------------------------------------------------------------------------------ -->
-
-
     <!-- all script tags are here  -->
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
-     <script src="js/menubtn.js"></script>
+    <script src="js/menubtn.js"></script>
     <script src="js/user.js"></script>
 </body>
 
