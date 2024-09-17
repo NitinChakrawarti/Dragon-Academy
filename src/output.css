@@ -719,6 +719,14 @@ video {
   margin-top: 20px;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1152,6 +1160,10 @@ video {
   padding-top: 10px;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1433,6 +1445,10 @@ h6 {
     margin-top: 20px;
   }
 
+  .sm\:ml-0 {
+    margin-left: 0px;
+  }
+
   .sm\:h-\[100px\] {
     height: 100px;
   }
@@ -1514,6 +1530,10 @@ h6 {
 
   .sm\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
   }
 
   .sm\:text-3xl {
