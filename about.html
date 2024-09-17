@@ -50,7 +50,7 @@
                     <img src="Assets/da-removebg-preview.png" alt=""
                         class="md:scale-110 sm:h-[100px] h-[82px] logo_dragon ">
                 </div>
-                <div class="sm:hidden flex ">
+                <div class="md:hidden flex ">
                     <i class="fa-solid fa-bars text-4xl menu_btn " style="color:#fff2d0;"></i>
                 </div>
             </div>
@@ -67,12 +67,12 @@
     </nav>
 
     <div class=" menu_nav hidden  fixed w-full  bg-tert/90  z-40 ">
-        <div class="flex flex-row-reverse h-[100vh]">
+        <div class="flex justify-center h-[100vh]">
 
             <ul
                 class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
                 <li class="  responsive_menu font-black  text-[20px] z-30"> <a href="index.html">Home </a> </li>
-                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="about.html"> About </a> </li>
+                <li class=" responsive_menu font-black after_underline text-[20px] z-30"> <a href="about.html"> About </a> </li>
                 <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="services.html"> services </a> </li>
             </ul>
         </div>
@@ -102,11 +102,41 @@
         <div class="w-full z-20 relative">
 
             <div class=" z-20 relative">
+                <!--about us-->
+                <div id="" class="flex flex-col gap-6 py-12 mt-16  lg-mt-32 ">
+
+
+                    <header
+                        class=" bg-secondary/90  flex flex-col text-black items-center justify-center py-[20px] w-full">
+                        <p class="md:text-5xl text-4xl text-center font-bold  sm:font-bold font-display">About Us</p>
+                    </header>
+
+                    <div id="step1"
+                        class="rounded-xl border ml-auto mr-auto left-2/4 right-2/4 px-8 py-12 flex  flex-col w-[90%]">
+
+                        <div class="pt-12 flex md:flex-row flex-col-reverse justify-center items">
+
+                            <div class=" flex flex-col justify-evenly text-center ">
+
+                                <h3 class="text-3xl font-display mt-10">Welcome to Dragon Academy, where passion meets
+                                    excellence.
+                                </h3>
+                                <p class="sm:text-lg text-sm  bg-black/70 text-tert/70  font-light font-body md:px-20">We believe in creating a dynamic and
+                                    supportive learning
+                                    environment. We offer a diverse range of programs and courses tailored to meet the
+                                    individual needs of
+                                    our trainers, ensuring they are well prepared for the challenges of the future.</p>
+                            </div>
+
+                            <img class=" w-auto  rounded custom-shadow" src="assets/a.png" alt="">
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Our Mission Section -->
                 <div id="steps"
-                    class="about-container z-20 relative about-content px-6 pt-12 max-w-7xl mt-16 mx-auto lg:px-8 lg-mt-32">
-                    <h1 class="text-3xl about-content font-bold font-display mb-14">Our Mission</h1>
+                    class="about-container z-20 relative overflow-x-hidden about-content px-6 pt-12 max-w-7xl mt-16 mx-auto lg:px-8 lg-mt-32">
+                    <h1 class="text-3xl about-content font-bold title_aboutsection  font-display mb-14">Our Mission</h1>
                     <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row mb-28">
                         <div class="flex flex-col md:flex-row gap-6">
                             <div class="flex justify-center items-center">
@@ -114,7 +144,7 @@
                                     alt="">
                             </div>
                             <p
-                                class="text-xl text-center font-medium text-secondary rounded-lg bg-tert/20 stroke-black p-10 font-secondary">
+                                class="text-xl text-center font-medium bg-black/70 text-tert/70 rounded-lgstroke-black p-10 font-secondary">
                                 To inspire and cultivate excellence in every
                                 trainer,
                                 equipping
@@ -128,14 +158,15 @@
 
 
 
-                    <h1 class="text-3xl about-content font-bold font-display mb-14">Our Vission</h1>
+                    <h1 class="text-3xl about-content  font-bold title_aboutsection  font-display mb-14">Our Vission
+                    </h1>
                     <div id="step1" class="rounded-xl border px-8 mb-28 py-12 flex flex-col lg:flex-row">
                         <div class="flex flex-col md:flex-row gap-6">
                             <div class="flex justify-center items-center">
                                 <img class="object-cover rounded" src="assets/8ab7e9f0-45b6-46ce-863f-8cac7cee31a6.png"
                                     alt="">
                             </div>
-                            <p class=" text-xl text-center font-medium text-secondary rounded-lg bg-tert/20 stroke-black
+                            <p class=" text-xl text-center font-medium bg-black/70 text-tert/70 rounded-lg stroke-black
                                     p-10 font-secondary">To be a leading trainer, and critical thinking in
                                 every
                                 trainer
@@ -148,18 +179,19 @@
 
 
                 <div id="steps"
-                    class="about-container z-20 relative about-content px-6  max-w-7xl mx-auto lg:px-8 lg-mt-32 mb-8">
+                    class="about-container z-20 relative overflow-x-hidden about-content px-6  max-w-7xl mx-auto lg:px-8 lg-mt-32 mb-8">
 
                     <!-- Why choose dragon academy -->
 
-                    <h1 class="text-3xl about-content font-bold font-display mb-14">Why Choose Dragon Academy</h1>
+                    <h1 class="text-3xl about-content font-bold   title_aboutsection  font-display mb-14">Why Choose
+                        Dragon Academy</h1>
                     <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
                         <div class="flex flex-col md:flex-row gap-6 w-full">
                             <div class="flex justify-center items-center">
                                 <img class="object-cover rounded" src="assets/e4bc1e1f-2d1a-4983-b606-015ca9f1051e.png"
                                     alt="">
                             </div>
-                            <div class="text-xl w-full font-medium text-secondary rounded-lg bg-tert/20 stroke-black
+                            <div class="text-xl w-full font-medium bg-black/70 text-tert/70 stroke-black
                             py-10 px-[10px] font-secondary">
                                 <ul class="list-disc pl-5">
                                     <li class="   
@@ -225,7 +257,7 @@
     <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
         <div class="md:h-[400px] w-full rounded-xl  ">
             <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
-                <div class="w-[300px] h-[300px] flex flex-col justify-start items-center">
+                <div class="w-[300px] sm:h-[300px] mb-16 flex flex-col justify-start items-center">
                     <img src="Assets/da-removebg-preview.png" alt="" class="h-[200px] relative z-20">
                     <p class="font-primary z-30 text-tert text-center font-semibold text-sm  mt-[-50px]">Training &
                         research
@@ -233,28 +265,28 @@
                         oraganisation
                     </p>
                 </div>
-                <div class="w-[300px]  h-[300px] justify-center mt-10">
-                    <h1 class="text-4xl font-medium text-center mb-8">LINKS </h1>
+                <div class="w-[300px]  sm:h-[300px]  mb-16 justify-center sm:mt-10 mt-0">
+                    <h1 class="text-2xl sm:text-3xl text-white   font-medium text-center mb-8">LINKS </h1>
                     <div>
                         <ul class="text-tert  font-primary text-[1px] text-center">
-                            <li> <a href="#">Home </a> </li>
-                            <li> <a href="about.html"> About </a> </li>
-                            <li> <a href="Dragons.html">services </a> </li>
+                            <li class="pb-2"> <a class="text-ld" href="#">Home </a> </li>
+                            <li class="pb-2"> <a class="text-ld" href="about.html"> About </a> </li>
+                            <li class="pb-2"> <a class="text-ld" href="Dragons.html">services </a> </li>
                             <!-- <li> <a href="training.html">Training </a> </li>
                             <li> <a href="event.html">Events </a> </li> -->
                         </ul>
                     </div>
                 </div>
-                <div class="w-[300px]  h-[300px] justify-center mt-10">
-                    <h1 class="text-4xl font-medium text-center mb-8">Social media </h1>
+                <div class="w-[300px]  h-[300px] justify-center sm:mt-10 mt-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium text-white text-center mb-8">Social media </h1>
                     <div>
                         <ul class="text-[1px] text-start ml-16 text-tert font-primary">
-                            <li> <a href="" class=""> <i class="fa-brands fa-youtube text-2xl mr-4"></i> youtube </a>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10" > <i class="fa-brands fa-youtube text-xl mr-4"></i> youtube </a>
                             </li>
-                            <li> <a href=""> <i class="fa-brands  text-2xl mr-4  fa-facebook"></i> facebook </a> </li>
-                            <li> <a href=""> <i class="fa-solid   text-2xl mr-4 fa-x"></i> twitter</a> </li>
-                            <li> <a href=""> <i class="fa-brands  text-2xl mr-4  fa-instagram"></i> instagram</a> </li>
-                            <li> <a href=""> <i class="fa-solid   text-2xl mr-4 fa-phone"></i>9876543210</a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i class="fa-brands  text-xl mr-4  fa-facebook"></i> facebook </a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i class="fa-solid   text-xl mr-4 fa-x"></i> twitter</a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i class="fa-brands  text-xl mr-4  fa-instagram"></i> instagram</a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i class="fa-solid   text-xl mr-4 fa-phone"></i>9876543210</a> </li>
                         </ul>
                     </div>
                 </div>

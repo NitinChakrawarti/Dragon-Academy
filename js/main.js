@@ -25,7 +25,9 @@ sr.reveal('.event4_region', { origin: 'right', distance: '400px', delay: 400 })
 sr.reveal('.event3_region', { origin: 'right', distance: '400px', delay: 100 })
 sr.reveal('.event2_region', { origin: 'left', distance: '400px', delay: 100 })
 sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
-// sr.reveal('.responsive_menu')
+
+
+sr.reveal('.title_aboutsection', { origin: 'right', distance: '500px', delay:0 })
 
 
 // on hover image description is here

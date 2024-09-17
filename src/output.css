@@ -618,6 +618,34 @@ video {
   top: 0px;
 }
 
+.left-\[\] {
+  left: ;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.right-\[\] {
+  right: ;
+}
+
+.right-\[top-2\/4\] {
+  right: top-2/4;
+}
+
+.top-2\/4 {
+  top: 50%;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -637,6 +665,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-\[\] {
+  margin-left: ;
+  margin-right: ;
 }
 
 .mb-14 {
@@ -727,6 +760,22 @@ video {
   margin-bottom: 7rem;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -799,6 +848,42 @@ video {
   height: 82px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[10px\] {
+  height: 10px;
+}
+
+.h-\[102px\] {
+  height: 102px;
+}
+
+.h-\[90px\] {
+  height: 90px;
+}
+
+.h-\[92px\] {
+  height: 92px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[88px\] {
+  height: 88px;
+}
+
+.h-\[84px\] {
+  height: 84px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
 .max-h-20 {
   max-height: 5rem;
 }
@@ -839,6 +924,46 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[805\] {
+  width: 805;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[00\%\] {
+  width: 00%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[\%\] {
+  width: %;
+}
+
+.w-\[82\%\] {
+  width: 82%;
+}
+
+.w-\[88\%\] {
+  width: 88%;
+}
+
+.w-auto {
+  width: auto;
+}
+
 .max-w-20 {
   max-width: 5rem;
 }
@@ -865,6 +990,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -913,6 +1042,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-hidden {
@@ -1038,6 +1171,26 @@ video {
 
 .bg-tert\/40 {
   background-color: rgb(255 242 208 / 0.4);
+}
+
+.bg-secondary\/90 {
+  background-color: rgb(250 112 112 / 0.9);
+}
+
+.bg-black\/20 {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.bg-black\/0 {
+  background-color: rgb(0 0 0 / 0);
+}
+
+.bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
 }
 
 .bg-contain {
@@ -1170,6 +1323,36 @@ video {
   padding-right: 10px;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1204,6 +1387,22 @@ video {
 
 .pt-\[10px\] {
   padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -1336,6 +1535,18 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-tert\/80 {
+  color: rgb(255 242 208 / 0.8);
+}
+
+.text-tert\/90 {
+  color: rgb(255 242 208 / 0.9);
+}
+
+.text-tert\/70 {
+  color: rgb(255 242 208 / 0.7);
 }
 
 .backdrop-blur-lg {
@@ -1472,6 +1683,14 @@ h6 {
     margin-top: 20px;
   }
 
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .sm\:hidden {
     display: none;
   }
@@ -1482,6 +1701,10 @@ h6 {
 
   .sm\:h-\[70px\] {
     height: 70px;
+  }
+
+  .sm\:h-\[300px\] {
+    height: 300px;
   }
 
   .sm\:w-\[185px\] {
@@ -1527,6 +1750,21 @@ h6 {
     font-size: 20px;
   }
 
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:font-bold {
     font-weight: 700;
   }
@@ -1539,6 +1777,10 @@ h6 {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[400px\] {
@@ -1555,6 +1797,10 @@ h6 {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
@@ -1569,6 +1815,16 @@ h6 {
 
   .md\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
