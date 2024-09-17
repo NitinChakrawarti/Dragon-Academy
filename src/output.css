@@ -622,6 +622,14 @@ video {
   bottom: -20px;
 }
 
+.top-2\/4 {
+  top: 50%;
+}
+
+.bottom-2\/4 {
+  bottom: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -725,6 +733,14 @@ video {
 
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .flex {
@@ -1001,6 +1017,10 @@ video {
 
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.to-50\% {
+  --tw-gradient-to-position: 50%;
 }
 
 .bg-contain {
@@ -1447,6 +1467,14 @@ h6 {
 
   .sm\:ml-0 {
     margin-left: 0px;
+  }
+
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 4rem;
   }
 
   .sm\:h-\[100px\] {
