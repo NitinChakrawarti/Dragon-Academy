@@ -24,9 +24,10 @@ async function apicall() {
                 <h1 class="text-[28px] testi_name"> ${name} </h1>
                
 
-                <a href="mailto: ${mail}"  class="text-center text-secondary testi_mail text-wrap"> ${mail} </a>
+                <a href="mailto: ${mail}"  class="text-center text-secondary testi_mail text-wrap text-lg"> ${mail} </a>
                 </div>`;
             parent.appendChild(div);
+            
 
         });
 

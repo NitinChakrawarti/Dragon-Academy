@@ -622,6 +622,10 @@ video {
   z-index: 30;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -678,12 +682,20 @@ video {
   height: 100px;
 }
 
+.h-\[120px\] {
+  height: 120px;
+}
+
 .h-\[130px\] {
   height: 130px;
 }
 
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-\[180px\] {
+  height: 180px;
 }
 
 .h-\[200px\] {
@@ -722,6 +734,18 @@ video {
   height: 82px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .w-\[130px\] {
   width: 130px;
 }
@@ -752,6 +776,10 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -804,10 +832,6 @@ video {
 
 .overflow-y-hidden {
   overflow-y: hidden;
-}
-
-.overflow-y-visible {
-  overflow-y: visible;
 }
 
 .text-wrap {
@@ -866,12 +890,65 @@ video {
   background-color: rgb(250 112 112 / 0.15);
 }
 
+.bg-secondary\/25 {
+  background-color: rgb(250 112 112 / 0.25);
+}
+
+.bg-tert\/20 {
+  background-color: rgb(255 242 208 / 0.2);
+}
+
 .bg-transparent {
   background-color: transparent;
 }
 
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.bg-tert {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 242 208 / var(--tw-bg-opacity));
+}
+
+.bg-secondary\/10 {
+  background-color: rgb(250 112 112 / 0.1);
+}
+
+.bg-secondary\/50 {
+  background-color: rgb(250 112 112 / 0.5);
+}
+
+.bg-tert\/50 {
+  background-color: rgb(255 242 208 / 0.5);
+}
+
+.bg-tert\/5 {
+  background-color: rgb(255 242 208 / 0.05);
+}
+
+.bg-tert\/80 {
+  background-color: rgb(255 242 208 / 0.8);
+}
+
+.bg-secondary\/80 {
+  background-color: rgb(250 112 112 / 0.8);
+}
+
+.bg-tert\/90 {
+  background-color: rgb(255 242 208 / 0.9);
+}
+
+.bg-tert\/10 {
+  background-color: rgb(255 242 208 / 0.1);
+}
+
+.bg-tert\/100 {
+  background-color: rgb(255 242 208 / 1);
+}
+
+.bg-tert\/0 {
+  background-color: rgb(255 242 208 / 0);
 }
 
 .bg-contain {
@@ -922,6 +999,11 @@ video {
 .px-default {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-4 {
@@ -1018,6 +1100,27 @@ video {
   line-height: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1028,6 +1131,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .tracking-wide {
@@ -1047,6 +1154,24 @@ video {
 .text-tert {
   --tw-text-opacity: 1;
   color: rgb(255 242 208 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .backdrop-blur-lg {
@@ -1130,7 +1255,7 @@ h6 {
 
 /* nav links underline custom code  */
 
-.nav_links_1::after{
+.after_underline::after{
   content: "";
   width: 110%;
   height: .06em;

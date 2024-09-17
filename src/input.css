@@ -46,7 +46,7 @@ h6 {
 
   /* nav links underline custom code  */
 
-  .nav_links_1::after{
+  .after_underline::after{
     
         content: "";
         width: 110%;

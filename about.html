@@ -56,70 +56,90 @@
                     <i class="fa-solid fa-bars text-4xl menu_btn" style="color:#fff2d0;"></i>
                 </div>
             </div>
-            <div class=" flex flex-col sm:justify-center font-primary  items-center relative overflow-y-visible md:z-0 z-30">
+            <div class=" md:flex flex-col  hidden sm:justify-center  items-center relative md:z-0 z-30">
                 <ul
-                    class="md:flex flex-col gap-8 hidden md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
-                    <li class=" nav_links_2 "> <a href="index.html">Home </a> </li>
-                    <li class=" nav_links_1"> <a href="about.html"> About </a> </li>
-                    <li class=" nav_links_3"> <a href="services.html">services </a> </li>
+                    class="flex font-primary flex-col gap-8 md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
+                    <li class=" nav_links_1  "> <a href="index.html">Home </a> </li>
+                    <li class=" nav_links_2 after_underline"> <a href="about.html"> About </a> </li>
+                    <li class=" nav_links_2 "> <a href="services.html"> services </a> </li>
+
+
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class=" menu_nav hidden  fixed w-full  bg-tert/90  z-40 ">
+        <div class="flex flex-row-reverse h-[100vh]">
+
+            <ul
+                class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
+                <li class="  responsive_menu font-black  text-[20px] z-30"> <a href="index.html">Home </a> </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="about.html"> About </a> </li>
+                <li class=" responsive_menu font-black  text-[20px] z-30"> <a href="services.html"> services </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class=" menu_nav hidden  relative  bg-tert/20">
+        <div class="flex flex-row-reverse">
+
+            <ul
+                class="flex font-primary flex-col gap-8 md:flex-row text-secondary font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
+                <li class=" nav_links_ responsive_menu z-30"> <a href="index.html">Home </a> </li>
+                <li class=" responsive_menu z-30"> <a href="about.html"> About </a> </li>
+                <li class=" responsive_menu z-30"> <a href="services.html"> services </a> </li>
+            </ul>
+        </div>
+    </div>
+
     <!-- --------------------------- -->
 
     <main class="w-full">
         <!-- hero section is here  -->
+
         <div class="hero w-full  bg-no-repeat bg-center bg-contain bg-transparent">
-            <div class=" w-full h-[400px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
+            <div class=" w-full h-[180px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
                 <div id="left" class="sm:w-[28%] lg:flex justify-center items-center hidden">
-                    <img id="left_img" class="h-[200px] cursor-pointer" src="Assets/d07.png" alt="">
+                    <img id="left_img" class="h-[120px] cursor-pointer" src="Assets/d07.png" alt="">
                 </div>
                 <div id="middle" class="sm:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
-                    <img id="main_img" class="h-[300px] z-10 sm:max-w-max" src="Assets/d06.png" class="" alt="">
-                    <!-- <button
-                        class="drag_btn_hover invisible sm:h-[70px] sm:w-[185px] sm:mt-0 mt-4 h-[50px] bg-secondary text-[#fff2d0] rounded-2xl z-20 px-4  hover:text-black duration-300">know
-                        more
-                        <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
-                    </button> -->
-
+                    <img id="main_img" class="h-[150px] z-10 sm:max-w-max" src="Assets/d06.png" class="" alt="">
                 </div>
                 <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
-                    <img id="right_img" class="h-[200px] cursor-pointer " src="Assets/d09.png" alt="">
+                    <img id="right_img" class="h-[120px] cursor-pointer " src="Assets/d09.png" alt="">
                 </div>
 
             </div>
         </div>
 
+
+
+
+
         <!-- get testimonials  ----------  -->
 
 
-        <div class="testimonials px-default z-20 relative pb-16  bg-secondary/15">
+        <div class="testimonials px-default z-20 relative pb-16  bg-secondary/25">
             <div class="z-20 relative  pt-8 sm:px-[40px]">
                 <div class="flex justify-center items-center flex-col overflow-x-hidden">
-                    <h2 class="text-[28px] text-tert nav_links_1 px-[60px] text-center sub_head font-bold">
+                    <h2 class="text-[28px] text-white nav_links_1 px-[60px] text-center sub_head font-bold">
                         Our Customers
                     </h2>
 
                 </div>
                 <div class="testimonials_main mt-8 mb-8 ">
-
                     <div
                         class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4 testi_parent text-[16px]  overflow-x-hidden overflow-y-hidden">
-
-
                         <!-- <div
                             class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
                             <img src=${img_url} alt="" m class="h-[130px] w-[130px] rounded-full testi_dp">
                             <h1 class="text-[28px] testi_name"> ${name} </h1>
-
-
                             <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap"> ${mail}
                             </a>
                         </div> -->
-                        <!-- here code comes from js  -->
 
+                        <!-- here code comes from js  -->
                     </div>
 
                 </div>
@@ -159,7 +179,7 @@
                     <h1 class="text-4xl font-medium text-center mb-8">LINKS </h1>
 
                     <div>
-                        <ul class="text-tert  font-primary text-[1px] text-center">
+                        <ul class="text-tert  font-primary font-semibold text-[1px] text-center">
                             <li> <a href="#">Home </a> </li>
                             <li> <a href="about.html"> About </a> </li>
                             <li> <a href="Dragons.html">Dragons </a> </li>
@@ -172,7 +192,7 @@
                     <h1 class="text-4xl font-medium text-center mb-8">Social media </h1>
 
                     <div>
-                        <ul class="text-[1px] text-start ml-16 text-tert font-primary">
+                        <ul class="text-[1px] text-start ml-16 text-tert font-semibold font-primary">
                             <li> <a href="" class=""> <i class="fa-brands fa-youtube text-2xl mr-4"></i> youtube </a>
                             </li>
                             <li> <a href=""> <i class="fa-brands  text-2xl mr-4  fa-facebook"></i> facebook </a> </li>
@@ -198,6 +218,7 @@
     <!-- all script tags are here  -->
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
+     <script src="js/menubtn.js"></script>
     <script src="js/user.js"></script>
 </body>
 
