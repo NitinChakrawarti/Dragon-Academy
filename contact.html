@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Academy - About</title>
+    <link rel="stylesheet" type="text/css" href="src/output.css">
+    <link rel="stylesheet" href="src/contact.css">
+    <!-- google fonts link / -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- --------------------------- -->
+
+    <!-- ts particle cdn is here  -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <!-- --------------------------- -->
+
+    <!-- cdn font icons font awosome  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- --------------------------- -->
+
+</head>
+
+<body class="bg-black">
+
+    <div id="particles-js"></div>
+
+    <!-- nav bar is here  -->
+
+    <nav class="sticky top-0 bg- z-30 backdrop-blur-lg">
+        <div class="h-[100px] flex flex-row justify-between   w-full content-center px-[50px] overflow-x-hidden ">
+
+
+            <div class="pl-[10px] flex justify-between items-center w-full overflow-y-hidden">
+                <div>
+                    <img src="Assets/da-removebg-preview.png" alt="" z
+                        class="md:scale-110 sm:h-[100px] h-[82px] logo_dragon ">
+                </div>
+                <div class="md:hidden flex ">
+                    <i class="fa-solid fa-bars text-4xl menu_btn " style="color:#fff2d0;"></i>
+                </div>
+            </div>
+            <div class=" md:flex flex-col  hidden sm:justify-center  items-center relative md:z-0 z-30">
+                <ul
+                    class="flex font-primary flex-col gap-8 md:flex-row text-[#fff2d0] relative px-[40px] text-[40px] font-semibold nav_links ">
+                    <li class=" nav_links_2  "> <a href="index.html">Home </a> </li>
+                    <li class=" nav_links_1  "> <a href="about.html"> About </a> </li>
+                    <li class=" nav_links_2 "> <a href="services.html"> services </a> </li>
+                    <li class=" nav_links_2 after_underline"> <a href="contact.html"> Contact</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" menu_nav hidden  fixed w-full  bg-tert/90  z-40 ">
+        <div class="flex justify-center h-[100vh]">
+
+            <ul
+                class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
+                <li class="  responsive_menu font-black  text-center text-[20px] z-30"> <a href="index.html">Home </a>
+                </li>
+                <li class=" responsive_menu  font-black text-center  text-[20px] z-30"> <a href="about.html"> About</a>
+                </li>
+                <li class=" responsive_menu font-black  text-center text-[20px] z-30"> <a href="services.html"> services
+                    </a> </li>
+                <li class=" responsive_menu font-black  text-center text-[20px] z-30"> <a href="contact.html"> Contact
+                    </a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main page of website-------------------------------------------------------------- -->
+    <main class="w-full">
+        <!-- hero section is here  -->
+
+        <div class="hero w-full  bg-no-repeat bg-center bg-contain bg-transparent">
+            <div class=" w-full h-[180px] flex justify-evenly pt-[10px] hero__ele overflow-y-hidden overflow-x-hidden">
+                <div id="left" class="sm:w-[28%] lg:flex justify-center items-center hidden">
+                    <img id="left_img" class="h-[120px] cursor-pointer" src="Assets/d07.png" alt="">
+                </div>
+                <div id="middle" class="sm:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
+                    <img id="main_img" class="h-[150px] z-10 sm:max-w-max" src="Assets/d06.png" class="" alt="">
+                </div>
+                <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
+                    <img id="right_img" class="h-[120px] cursor-pointer " src="Assets/d09.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full z-20 relative">
+
+            <div class=" z-20 relative">
+                <!--about us-->
+                <div id="" class="flex flex-col gap-6 py-12 mt-16  lg-mt-32 ">
+
+
+                    <header
+                        class="aboutushead bg-secondary/90  flex flex-col text-black items-center justify-center py-[20px] w-full">
+                        <p class="md:text-5xl text-4xl text-center font-bold  sm:font-bold font-display">Contact Us</p>
+                    </header>
+                    <div class="md:flex-row flex flex-col items-center md:justify-evenly ">
+
+                        <div class=" flex justify-center items-center">
+                            <img class="h-[300px]" src="Assets/contactlog.png" alt="">
+                        </div>
+                        <div class="contact-box">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="f9d8d934-4f12-4c0f-bfc3-d14d9ec05bd9">
+                                <div class="user-box">
+                                    <input type="text" name="name" required>
+                                    <label for="">Name</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="email" name="email" required>
+                                    <label for="">Email</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="text" name="message" required>
+                                    <label for="">Message</label>
+                                </div>
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                <a>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span> <button>Submit</button>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="testimonials px-default z-20 relative pb-16  bg-secondary/15">
+                <div class="z-20 relative  pt-8 sm:px-[40px]">
+                    <div class="flex justify-center items-center flex-col overflow-x-hidden">
+                        <h2 class="text-[28px] text-white nav_links_1 px-[60px] text-center sub_head font-bold">
+                            Our Team
+                        </h2>
+
+                    </div>
+                    <div class="testimonials_main mt-8 mb-8 ">
+
+                        <div
+                            class="w-full bg- flex md:flex-row flex-wrap flex-col justify-evenly items-center gap-4 p-4  text-[16px]  overflow-x-hidden overflow-y-hidden">
+
+
+                            <div
+                                class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
+                                <img src="https://avatars.githubusercontent.com/u/149225785?v=4" alt="" m
+                                    class="h-[130px] w-[130px] rounded-full testi_dp">
+                                <h1 class="text-[28px] testi_name">Nitin Chakrawarti </h1>
+
+
+                                <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap">
+                                    <i class="fa-brands fa-github"></i> NitinChakrawarti
+                                </a>
+                            </div>
+                            <div
+                                class="bg-white/20 h-[350px] w-[350px] rounded-3xl flex flex-col md:justify-evenly justify-center items-center testi_child user${index}">
+                                <img src="https://avatars.githubusercontent.com/u/170038197?v=4" alt="" m
+                                    class="h-[130px] w-[130px] rounded-full testi_dp">
+                                <h1 class="text-[28px] testi_name"> Rinki Gond</h1>
+
+
+                                <a href="mailto: ${mail}" class="text-center text-secondary testi_mail text-wrap">
+                                    <i class="fa-brands fa-github"></i> rinkigond5678
+                                </a>
+                            </div>
+                            <!-- here code comes from js  -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- --------------------------- -->
+
+
+    </main>
+
+    <div id="particles-js"></div>
+
+
+
+    <!-- footer tag is here all links are here  -->
+
+
+
+    <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
+        <div class="md:h-[400px] w-full rounded-xl  ">
+            <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
+                <div class="w-[300px] sm:h-[300px] mb-16 flex flex-col justify-start items-center">
+                    <img src="Assets/da-removebg-preview.png" alt="" class="h-[200px] relative z-20">
+                    <p class="font-primary z-30 text-tert text-center font-semibold text-sm  mt-[-50px]">Training &
+                        research
+                        <br>
+                        oraganisation
+                    </p>
+                </div>
+                <div class="w-[300px]  sm:h-[300px]  mb-16 justify-center sm:mt-10 mt-0">
+                    <h1 class="text-2xl sm:text-3xl text-white   font-medium text-center mb-8">LINKS </h1>
+                    <div>
+                        <ul class="text-tert  font-primary text-[1px] text-center">
+                            <li class="pb-2 text-lg"> <a class="text-ld" href="#">Home </a> </li>
+                            <li class="pb-2 text-lg"> <a class="text-ld" href="about.html"> About </a> </li>
+                            <li class="pb-2 text-lg"> <a class="text-ld" href="services.html">services </a> </li>
+                            <li> <a href="contact.html">Contact us</a> </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-[300px]  h-[300px] justify-center sm:mt-10 mt-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium text-white text-center mb-8">Social media </h1>
+                    <div>
+                        <ul class="text-[1px] text-start ml-16 text-tert font-primary">
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-brands fa-youtube text-lg sm:text-xl sm:ml-0 ml-6 mr-4"></i> youtube
+                                </a>
+                            </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-facebook"></i>
+                                    facebook </a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-solid   text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-x"></i> twitter</a>
+                            </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-brands  text-lg sm:text-xl sm:ml-0 ml-6 mr-4  fa-instagram"></i>
+                                    instagram</a> </li>
+                            <li class="pb-4"> <a href="" class=" text-lg pb-10"> <i
+                                        class="fa-solid   text-lg sm:text-xl sm:ml-0 ml-6 mr-4 fa-phone"></i>9876543210</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-lg  pb-[30px] sm:pb-0">
+                <span class=" text-center text-lg font-primary text-tert"> <span class="text-sm pb-4">&#169; </span> all
+                    rights reserved</span>
+
+            </div>
+        </div>
+    </footer> <!-- ------------------------------------------------------------------------------ -->
+    <!-- all script tags are here  -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menubtn.js"></script>
+    <script src="js/user.js"></script>
+</body>
+
+</html>
