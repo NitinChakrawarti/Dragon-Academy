@@ -4,6 +4,7 @@
 
 <h3 align="left">Particles js </h3>
 <h3 align="left">Motion on reveal </h3>
+<h3 align="left">web 3 forms to get form data  </h3>
 <h3 align="left">API to fetch random user for our customer section</h3>
 </p>
 
@@ -25,6 +26,7 @@ In this Project we were divided into team of two then we have to work on project
 #### <h3 align="left"> Home Page</h3>
 <h3 align="left">About Page</h3>
 <h3 align="left">Service Page</h3>
+<h3 align="left">Contact Page</h3>
 
 ##
 ### Team Name :- EasyDevs
