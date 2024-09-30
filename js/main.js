@@ -27,7 +27,7 @@ sr.reveal('.event2_region', { origin: 'left', distance: '400px', delay: 100 })
 sr.reveal('.event1_region', { origin: 'left', distance: '400px', delay: 400 })
 
 
-sr.reveal('.title_aboutsection', { origin: 'right', distance: '500px', delay:0 })
+sr.reveal('.title_aboutsection', { origin: 'right', distance: '500px', delay: 0 })
 
 
 sr.reveal('.aboutushead')
@@ -42,13 +42,13 @@ const hero_des = document.querySelector('#middle');
 hero_des.addEventListener('mouseenter', () => {
   document.querySelector('.drag_btn_hover').classList.toggle('invisible')
   console.log('hddd');
-  
+
 });
 
 hero_des.addEventListener('mouseleave', () => {
   document.querySelector('.drag_btn_hover').classList.toggle('invisible')
   console.log("hee");
-  
+
 });
 
 // ------------------------------------------------
@@ -61,27 +61,33 @@ hero_des.addEventListener('mouseleave', () => {
 
 const drag_but_l = document.querySelector('#left_img')
 const drag_but_r = document.querySelector('#right_img');
+const main_drag = document.querySelector('#main_img');
 
 drag_but_l.addEventListener('click', (e) => {
 
   const l_dragon = drag_but_l.getAttribute('src')
-  const main_drag = document.querySelector('#main_img');
   const main_url = main_drag.getAttribute('src')
+  const right_url = drag_but_r.getAttribute('src')
 
+  const center_drag = main_url;
   main_drag.setAttribute('src', l_dragon);
-  drag_but_l.setAttribute('src', main_url);
-  console.log(main_url);
+  drag_but_l.setAttribute('src', right_url);
+  drag_but_r.setAttribute('src', center_drag);
 
 });
 
 drag_but_r.addEventListener('click', (e) => {
 
   const r_dragon = drag_but_r.getAttribute('src')
-  const main_drag = document.querySelector('#main_img');
   const main_url = main_drag.getAttribute('src')
+  const l_dragon = drag_but_l.getAttribute('src')
+
+  const center_drag = main_url;
 
   main_drag.setAttribute('src', r_dragon);
-  drag_but_r.setAttribute('src', main_url);
+  drag_but_r.setAttribute('src', l_dragon);
+  drag_but_l.setAttribute('src', center_drag );
+
   console.log(main_url);
 
 });

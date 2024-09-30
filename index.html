@@ -74,10 +74,14 @@
 
             <ul
                 class="flex font-primary flex-col gap-8 md:flex-row  text-black   font-bold relative px-[40px] text-[40px] z-20 overflow-x-hidden  py-16">
-                <li class="  responsive_menu font-black  text-center text-[20px] z-30"> <a href="index.html">Home </a> </li>
-                <li class=" responsive_menu  font-black text-center  text-[20px] z-30"> <a href="about.html"> About</a> </li>
-                <li class=" responsive_menu font-black  text-center text-[20px] z-30"> <a href="services.html"> services </a> </li>
-                <li class=" responsive_menu font-black  text-center text-[20px] z-30"> <a href="contact.html"> Contact </a> </li>
+                <li class="  responsive_menu font-black  text-center text-[20px] z-30"> <a href="index.html">Home </a>
+                </li>
+                <li class=" responsive_menu  font-black text-center  text-[20px] z-30"> <a href="about.html"> About</a>
+                </li>
+                <li class=" responsive_menu font-black  text-center text-[20px] z-30"> <a href="services.html"> services
+                    </a> </li>
+                <li class=" responsive_menu font-black  text-center text-[20px] z-30"> <a href="contact.html"> Contact
+                    </a> </li>
             </ul>
         </div>
     </div>
@@ -93,11 +97,14 @@
                 </div>
                 <div id="middle" class="sm:w-[28%] flex justify-center items-center flex-col cursor-pointer ">
                     <img id="main_img" class="h-[500px] z-10 sm:max-w-max" src="Assets/d06.png" class="" alt="">
-                    <!-- <button
-                        class="drag_btn_hover invisible sm:h-[70px] sm:w-[185px] sm:mt-0 mt-4 h-[50px] bg-secondary text-[#fff2d0] rounded-2xl z-20 px-4  hover:text-black duration-300">know
-                        more
-                        <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
-                    </button> -->
+                    <div class="w-[100px]">
+                        <ul class="list-disc md:flex flex-row justify-evenly gap-4">
+                            <li class="text-[#fff2d0]"> &nbsp; </li>
+                            <li class="text-[#fff2d0]"> &nbsp; </li>
+                            <li class="text-[#fff2d0]"> &nbsp; </li>
+                        </ul>
+                    </div>
+
 
                 </div>
                 <div id="right" class="sm:w-[30%] lg:flex   justify-center items-center hidden ">
@@ -171,75 +178,254 @@
                         <div
                             class="event1 container flex md:flex-row flex-col  flex-wrap relative justify-evenly items-center gap-4 py-4 overflow-x-hidden">
 
-
                             <div
-                                class="event1_region h-[400px] w-[280px]  flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
-                                <img src="Assets/event_india.jpg" alt="" class="w-[230px] rounded-2xl event_img">
-
-                                <h1 class="text-[40px] fixed bottom-10 font-bold ">INdia</h1>
-                            </div>
-                            <div
-                                class="event2_region h-[400px] w-[280px] flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
-                                <img src="Assets/event_japan.jpg" alt="" class="w-[230px] rounded-2xl event_img">
-
-                                <h1 class="text-[40px] fixed bottom-10 font-bold">japan</h1>
+                                class="event1_region h-[400px] w-[280px] flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card">
+                                <img src="Assets/event_india.jpg" alt="India"
+                                    class="w-[230px] rounded-2xl cursor-pointer event_img"
+                                    onclick="openPopup('popupModalIndia')">
+                                <h1 class="text-[40px] fixed bottom-10 font-bold">India</h1>
                             </div>
 
+                            <!-- Popup Modal for India -->
+                            <div id="popupModalIndia" class="popup ">
+                                <div class="popup-content w-[80%] md:w-[40%]">
+                                    <span class="close" onclick="closePopup('popupModalIndia')">&times;</span>
+                                    <!-- <div class="bg-[url('Assets/event_india.jpg')] h-[400px]"> </div> -->
+                                    <img src="Assets/event_india.jpg" alt="Japan" class="popup-img">
+                                    <h2 class="font-display text-black font-semibold ">Location</h2>
+                                    <ul class="list-none pl-5">
+                                        <p
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Academy, Himachal Pradesh</p>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Academy, Lucknow</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Sports Academy, Satara</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Martial Arts Academy, Faridabad</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!------------------------JAPAN--------------------------------->
+                            <div
+                                class="event2_region h-[400px] w-[280px] flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card">
+                                <img src="Assets/event_japan.jpg" alt="Japan"
+                                    class="w-[230px] rounded-2xl cursor-pointer event_img"
+                                    onclick="openPopup('popupModalJapan')">
+                                <h1 class="text-[40px] fixed bottom-10 font-bold">Japan</h1>
+                            </div>
+
+                            <!-- Popup Modal for Japan -->
+                            <div id="popupModalJapan" class="popup ">
+                                <div class="popup-content w-[80%] md:w-[40%]">
+                                    <span class="close" onclick="closePopup('popupModalJapan')">&times;</span>
+                                    <img src="Assets/event_japan.jpg" alt="Japan" class="popup-img">
+                                    <h2 class="font-display text-black font-semibold">Locations</h2>
+                                    <ul class="list-none pl-5">
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Nagasaki Kunchi (長崎くんち)</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Ryujin Matsuri (龍神祭り) - Dragon God Festival</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Tennyo no Mai (天女の舞) - Dragon God Dance</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Ryukyu Dragon Boat Race (ハーリー)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- KOREA------------------------------------------------------------------ -->
                             <div
                                 class="event3_region h-[400px] w-[280px]  flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
-                                <img src="Assets/korea.jpg" alt="" class="w-[230px] rounded-2xl event_img">
-
-                                <h1 class="text-[40px] fixed bottom-10 font-bold"> korea</h1>
+                                <img src="Assets/korea.jpg" alt="Korea"
+                                    class="w-[230px] rounded-2xl cursor-pointer event_img"
+                                    onclick="openPopup('popupModalKorea')">
+                                <h1 class="text-[40px] fixed bottom-10 font-bold">Korea</h1>
                             </div>
+
+                            <!-- Popup Modal for korea -->
+                            <div id="popupModalKorea" class="popup">
+                                <div class="popup-content w-[80%] md:w-[40%]">
+                                    <span class="close" onclick="closePopup('popupModalKorea')">&times;</span>
+                                    <img src="Assets/korea.jpg" alt="Korea" class="popup-img">
+                                    <h2 class="font-display text-black font-semibold">Locations</h2>
+                                    <ul class="list-none pl-5">
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Academy (드래곤 아카데미) - </li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Korean Dragon Martial Arts Academy</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Boat Racing Clubs</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---------------CHINA---------------------------------->
+
                             <div
                                 class="event4_region h-[400px] w-[280px] flex flex-col justify-center items-center border-2 border-tert rounded-2xl event_card ">
-                                <img src="Assets/china.jpg" alt="" class="w-[230px] rounded-2xl event_img">
-
-                                <h1 class="text-[40px] fixed bottom-10 font-bold">china</h1>
+                                <img src="Assets/china.jpg" alt="China"
+                                    class="w-[230px] rounded-2xl cursor-pointer event_img"
+                                    onclick="openPopup('popupModalChina')">
+                                <h1 class="text-[40px] fixed bottom-10 font-bold">China</h1>
                             </div>
+
+                            <!-- Popup Modal for china -->
+                            <div id="popupModalChina" class="popup">
+                                <div class="popup-content w-[80%] md:w-[40%]">
+                                    <span class="close" onclick="closePopup('popupModalChina')">&times;</span>
+                                    <img src="Assets/china.jpg" alt="China" class="popup-img">
+                                    <h2 class="font-display text-black font-semibold">Locations</h2>
+                                    <ul class="list-none pl-5">
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Longmen Academy (龙门学院) </li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Boat Racing Clubs</li>
+                                        <li
+                                            class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                            Dragon Martial Arts Schools </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!------------------------------------FRANCE--------------------------------------------------------------------------->
 
                             <div class="hidden sm:flex-row flex-col overflow-y-hidden flex-wrap relative justify-evenly items-center gap-5 py-4 overflow-x-hidden"
                                 id="event_card_hide">
 
                                 <div
                                     class="h-[400px] w-[280px]  flex-col justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex">
-                                    <img src="Assets/france.jpg" alt=""
-                                        class="h-[300px] sm:w-[230px] rounded-2xl event_img">
-
-                                    <h1 class="text-[40px] relative sm: bottom-[-20px] sm:bottom-10 font-bold"> france
+                                    <img src="Assets/france.jpg" alt="France"
+                                        class="h-[300px] sm:w-[230px] rounded-2xl cursor-pointer event_img"
+                                        onclick="openPopup('popupModalFrance')">
+                                    <h1 class="text-[40px] relative sm: bottom-[-20px] sm:bottom-10 font-bold">france
                                     </h1>
                                 </div>
+
+                                <!-- Popup Modal for france -->
+                                <div id="popupModalFrance" class="popup">
+                                    <div class="popup-content w-[80%] md:w-[40%]">
+                                        <span class="close" onclick="closePopup('popupModalFrance')">&times;</span>
+                                        <img src="Assets/france.jpg" alt="France" class="popup-img">
+                                        <h2 class="font-display text-black font-semibold">Locations</h2>
+                                        <ul class="list-none pl-5">
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Academy (Académie du Dragon)</li>
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Boat Racing </li>
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Martial Arts Club</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!------------------------GERMANY--------------------------->
                                 <div
                                     class="h-[400px] w-[280px] flex-col sm:justify-evenly justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex ">
-                                    <img src="Assets/germany.jpg" alt="" class="w-[230px] rounded-2xl event_img">
-
-                                    <h1 class="text-[40px] relative sm: bottom-[-20px] sm:bottom-10 font-bold">germany
+                                    <img src="Assets/germany.jpg" alt="Germany"
+                                        class="w-[230px] rounded-2xl cursor-pointer event_img"
+                                        onclick="openPopup('popupModalGermany')">
+                                    <h1 class="text-[40px] relative sm: bottom-[-20px] sm:bottom-10 font-bold">Germany
                                     </h1>
                                 </div>
 
+                                <!-- Popup Modal for germany -->
+                                <div id="popupModalGermany" class="popup">
+                                    <div class="popup-content w-[80%] md:w-[40%]">
+                                        <span class="close" onclick="closePopup('popupModalGermany')">&times;</span>
+                                        <img src="Assets/germany.jpg" alt="Germany" class="popup-img">
+                                        <h2 class="font-display text-black font-semibold">Locations</h2>
+                                        <ul class="list-none pl-5">
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Academy (Drachen Akademie)</li>
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Martial Arts School in Stuttgart</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-------NEW YORK-------------------------------------------------------------------->
                                 <div
                                     class="h-[400px] w-[280px]  flex-col justify-center sm:justify-evenly items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex ">
-                                    <img src="Assets/new york.jpg" alt="" class="w-[230px] rounded-2xl event_img">
-
+                                    <img src="Assets/new york.jpg" alt="New York"
+                                        class="w-[230px] rounded-2xl cursor-pointer event_img"
+                                        onclick="openPopup('popupModalNew')">
                                     <h1 class="text-[40px] relative sm: bottom-[-20px] sm:bottom-10 font-bold">New York
                                     </h1>
                                 </div>
+
+                                <!-- Popup Modal for newyork -->
+                                <div id="popupModalNew" class="popup">
+                                    <div class="popup-content w-[80%] md:w-[40%]">
+                                        <span class="close" onclick="closePopup('popupModalNew')">&times;</span>
+                                        <img src="Assets/new york.jpg" alt="New York" class="popup-img">
+                                        <h2 class="font-display text-black font-semibold">Locations</h2>
+                                        <ul class="list-none pl-5">
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Martial Arts Academy</li>
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                New York Dragon Boat Festival</li>
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Shen Wu Martial Arts</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!---------------NEPAL---------------------------------------------------------------------------->
                                 <div
                                     class="h-[400px] w-[280px] flex-col justify-center items-center border-2 border-tert rounded-2xl event_card  event_card_hide flex ">
-                                    <img src="Assets/nepal.jpg" alt=""
-                                        class="h-[300px] sm:w-[230px] rounded-2xl event_img">
-
+                                    <img src="Assets/nepal.jpg" alt="Nepal"
+                                        class="h-[300px] sm:w-[230px] rounded-2xl cursor-pointer event_img"
+                                        onclick="openPopup('popupModalNepal')">
                                     <h1 class="text-[40px] relative sm: bottom-[-20px] sm:bottom-10 font-bold">nepal
                                     </h1>
                                 </div>
 
+                                <!-- Popup Modal for nepal -->
+                                <div id="popupModalNepal" class="popup">
+                                    <div class="popup-content w-[80%] md:w-[40%]">
+                                        <span class="close" onclick="closePopup('popupModalNepal')">&times;</span>
+                                        <img src="Assets/nepal.jpg" alt="Nepal" class="popup-img">
+                                        <h2 class="font-display text-black font-semibold">Locations</h2>
+                                        <ul class="list-none pl-5">
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Dragon Martial Arts Academy</li>
+                                            <li
+                                                class="text-md md:text-[16px] md:mb-4 mb-2 font-light font-display text-[#fff2d0]">
+                                                Variou Dragon Arts Schools </li>
 
+                                        </ul>
+                                    </div>
+                                </div>
 
                             </div>
+
                         </div>
 
                         <button
-                            class="location_btn sm:h-[70px] sm:w-[185px] sm:mt-[20px] mt-[20px] h-[50px] bg-secondary text-[#fff2d0] font-primary font-medium  rounded-2xl z-20 px-4  hover:text-black duration-300">more
+                            class="location_btn sm:h-[70px] sm:w-[185px] sm:mt-[20px] mt-[20px] h-[50px] bg-secondary text-[#fff2d0] font-primary font-medium  rounded-2xl z-10 px-4  hover:text-black duration-300">more
                             Locations
                             <i class="fa-solid fa-arrow-right " style="color: #000000;"></i>
                         </button>
@@ -250,6 +436,91 @@
             </div>
         </div>
 
+        <!-- CSS -->
+        <style>
+            /*background*/
+            .popup {
+                display: none;
+                position: fixed;
+                padding-top: 100px;
+                z-index: 50;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.8);
+                overflow-y: hidden;
+
+            }
+
+            /* Popup Content */
+            .popup-content {
+                background-color: #fa7070b0;
+                /* height: 80vh; */
+                height: 550px;
+                display: flex;
+                /* justify-content: center; */
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                text-align: center;
+                border-radius: 10px;
+                overflow-y: hidden;
+
+            }
+
+            /* Close button */
+            .close {
+                width: 90%;
+                display: flex;
+                justify-content: right;
+                color: #fff2d0;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* Popup image */
+            .popup-img {
+                /* width: 100%; */
+                /* height: 50vh; */
+                height: 300px;
+                width: auto;
+                border-radius: 10px;
+            }
+        </style>
+
+        <!-- JS -->
+        <script>
+
+            function openPopup(popupId) {
+                document.getElementById(popupId).style.display = "block";
+            }
+
+
+            function closePopup(popupId) {
+                document.getElementById(popupId).style.display = "none";
+            }
+
+
+            window.onclick = function (event) {
+                if (event.target.classList.contains('popup')) {
+                    closePopup(event.target.id);
+                }
+            }
+        </script>
+
 
         <!-- ------------------------------------------ -->
 
@@ -259,8 +530,8 @@
         <!-- get testimonials  ----------  -->
 
 
-        <div class="testimonials px-default z-20 relative pb-16  bg-secondary/15">
-            <div class="z-20 relative mt-32 pt-8 sm:px-[40px]">
+        <div class="testimonials px-default z-10 relative pb-16  bg-secondary/15">
+            <div class="z-10 relative mt-32 pt-8 sm:px-[40px]">
                 <div class="flex justify-center items-center flex-col overflow-x-hidden">
                     <h2 class="text-[28px] text-white nav_links_1 px-[60px] text-center sub_head font-bold">
                         Our Customers
@@ -306,7 +577,7 @@
 
 
 
-    <footer class="p-4 z-20 relative w-full foot_line bg-black border-t-2 border-secondary">
+    <footer class="p-4 z-10 relative w-full foot_line bg-black border-t-2 border-secondary">
         <div class="md:h-[400px] w-full rounded-xl  ">
             <div class="flex flex-col md:flex-row items-center justify-evenly md:items-start">
                 <div class="w-[300px] sm:h-[300px] mb-16 flex flex-col justify-start items-center">

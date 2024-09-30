@@ -4,7 +4,7 @@
 
 
 body {
-    @apply font-secondary text-[22px] text-primary bg-bg;
+    @apply font-secondary;
 }
 
 a {
